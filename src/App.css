@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --clr-dark: #0d1b2a;
+  --clr-dark-300: #1b263b;
+  --clr-dark-600: #415a77;
+  --clr-dark-900: #778da9;
+  --clr-neutral: #e0e1dd;
+}
+.App {
+  background-color: var(--clr-dark-300);
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body,
+html,
+li,
+ul,
+ol,
+a {
+  color: var(--clr-neutral);
+}
+.nav-section {
+  background-color: var(--clr-dark);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+.nav-logo > a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.nav-section > nav {
+  display: flex;
+  gap: 30px;
+}
+.nav-section > nav > a {
+  text-decoration: none;
+}
+.nav-section > nav > a:hover {
+  text-decoration: underline;
+}
