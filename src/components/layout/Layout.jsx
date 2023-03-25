@@ -13,7 +13,9 @@ function Layout() {
           <Link to='/search'>Search recipes</Link>
         </nav>
       </div>
-      <Outlet />
+      <div className='page-container'>
+        <Outlet />
+      </div>
     </>
   );
 }

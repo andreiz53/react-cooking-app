@@ -37,6 +37,7 @@ a {
 .nav-section {
   background-color: var(--clr-dark);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 30px 60px;
 }
@@ -54,4 +55,47 @@ a {
 }
 .nav-section > nav > a:hover {
   text-decoration: underline;
+}
+.page-container {
+  padding-inline: 60px;
+  padding-block: 40px;
+}
+.recipe-list {
+  display: grid;
+  gap: 60px;
+}
+@media (min-width: 1000px) {
+  .recipe-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.recipe-list > .card {
+  padding: 25px;
+  background-color: var(--clr-dark);
+  border-radius: 6px;
+}
+.recipe-list > .card > h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.5rem;
+}
+.recipe-list > .card > p {
+  margin-bottom: 1.5rem;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.recipe-list > .card > a {
+  margin-top: 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--clr-neutral);
+  padding: 8px 20px;
+  color: var(--clr-dark);
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.recipe-list > .card > a:hover {
+  background-color: var(--clr-dark-600);
+  color: var(--clr-neutral);
 }
