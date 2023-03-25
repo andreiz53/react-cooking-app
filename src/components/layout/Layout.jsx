@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import Searchbar from '../Searchbar';
 
 function Layout() {
   return (
@@ -9,8 +10,10 @@ function Layout() {
           <Link to='/'>Cooking app</Link>
         </div>
         <nav>
-          <Link to='/create'>Create Recipe</Link>
-          <Link to='/search'>Search recipes</Link>
+          <Searchbar />
+          <Link className='nav-btn' to='/create'>
+            Create Recipe
+          </Link>
         </nav>
       </div>
       <div className='page-container'>
